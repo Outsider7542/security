@@ -3,52 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chipmunk Home Security - Home</title>
+    <title>LockTen Tech - Smart Home and Security</title>
     <style>
         :root {
-            --dark-orange: #CC5500;
+            --gradient-start: #FFD700; /* Yellow */
+            --gradient-middle: #FFA500; /* Orange */
+            --gradient-end: #FF4500; /* Red-Orange */
             --silver: #C0C0C0;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #000080;
-            background-image: 
-                linear-gradient(30deg, #000066 12%, transparent 12.5%, transparent 87%, #000066 87.5%, #000066),
-                linear-gradient(150deg, #000066 12%, transparent 12.5%, transparent 87%, #000066 87.5%, #000066),
-                linear-gradient(30deg, #000066 12%, transparent 12.5%, transparent 87%, #000066 87.5%, #000066),
-                linear-gradient(150deg, #000066 12%, transparent 12.5%, transparent 87%, #000066 87.5%, #000066),
-                linear-gradient(60deg, #00008877 25%, transparent 25.5%, transparent 75%, #00008877 75%, #00008877);
-            background-size: 80px 140px;
-            background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
+            background-color: #000000;
             color: #ffffff;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
-        .logo {
-            max-width: 100px; /* Maximum width of 100px */
-            max-height: 100px; /* Maximum height of 100px */
-            width: auto; /* Allow width to adjust proportionally */
-            height: auto; /* Allow height to adjust proportionally */
-            display: block;
-            margin: 0 auto 10px auto;
-        }
         header {
-            background-color: #000066;
-            color: #ffffff;
+            background: linear-gradient(45deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+            color: #000000;
             text-align: center;
             padding: 1rem;
             border-bottom: 3px solid var(--silver);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        }
+        .logo {
+            max-width: 100px;
+            max-height: 100px;
+            width: auto;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        h1 {
+            margin-bottom: 0;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--silver);
+            margin-top: 5px;
         }
         nav {
-            background-color: #000066;
-            color: #ffffff;
+            background-color: #1A1A1A;
             padding: 0.5rem;
             text-align: center;
         }
@@ -64,54 +63,58 @@
         nav ul li a {
             color: #ffffff;
             text-decoration: none;
-            background-color: var(--dark-orange);
+            background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
             padding: 10px 15px;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
         }
         nav ul li a:hover {
-            background-color: #E25822;
+            background: linear-gradient(45deg, var(--gradient-end), var(--gradient-start));
+            transform: scale(1.05);
         }
         main {
             padding: 20px;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             flex: 1;
-            background-color: rgba(0, 0, 128, 0.8);
+            background-color: rgba(26, 26, 26, 0.8);
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
             border: 1px solid var(--silver);
         }
         h2, h3 {
-            color: var(--silver);
+            color: var(--gradient-middle);
             text-shadow: 1px 1px 2px #000000;
         }
         .cta-button {
             display: inline-block;
-            background-color: var(--dark-orange);
-            color: white;
+            background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+            color: #000000;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
+            font-weight: bold;
         }
         .cta-button:hover {
-            background-color: #E25822;
+            background: linear-gradient(45deg, var(--gradient-end), var(--gradient-start));
+            transform: scale(1.05);
         }
         footer {
-            background-color: #000066;
-            color: #ffffff;
+            background: linear-gradient(45deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
+            color: #000000;
             text-align: center;
             padding: 1rem;
-            width: 100%;
+            margin-top: 20px;
             border-top: 3px solid var(--silver);
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://m.media-amazon.com/images/I/71BFodpufRL._AC_SL1500_.jpg" alt="Chipmunk Home Security Logo" class="logo">
-        <h1>Chipmunk Home Security</h1>
+        <img src="https://example.com/path/to/lockten-logo.png" alt="LockTen Tech Logo" class="logo">
+        <h1>LockTen Tech</h1>
+        <p class="subtitle">Smart Home and Security</p>
     </header>
     
     <nav>
@@ -124,21 +127,21 @@
     </nav>
     
     <main>
-        <h2>Welcome to Chipmunk Home Security</h2>
-        <p>We offer a personalized touch to the security of your home and property by making sure we destroy it before anyone else does.</p>
+        <h2>Welcome to LockTen Tech</h2>
+        <p>Securing your home with cutting-edge smart technology and unparalleled expertise.</p>
         
         <h3>Our Services</h3>
         <ul>
-            <li>Disruption to your peace of mind</li>
-            <li>Best in class BB gun absorption</li>
-            <li>24/7 property "enhancement"</li>
+            <li>Smart Home Integration</li>
+            <li>Advanced Security Systems</li>
+            <li>24/7 Monitoring Solutions</li>
         </ul>
         
-        <a href="contact.html" class="cta-button">Contact Us</a>
+        <a href="contact.html" class="cta-button">Get a Free Consultation</a>
     </main>
     
     <footer>
-        <p>&copy; 2024 Chipmunk Home Security. All rights reserved.</p>
+        <p>&copy; 2024 LockTen Tech. All rights reserved.</p>
     </footer>
 </body>
 </html>
